@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/style.css">
+  
+  <title>Frontend Mentor | [Blogr]</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <!-- Product
+
+  Overview
+  Pricing
+  Marketplace
+  Features
+  Integrations
+
+  Company
+
+  About
+  Team
+  Blog
+  Careers
+
+  Connect
+
+  Contact
+  Newsletter
+  LinkedIn
+  
+  Login
+  Sign Up
+
+  A modern publishing platform
+  Grow your audience and build your online brand
+
+  Start for Free
+  Learn More
+
+  Designed for the future
+
+  Introducing an extensible editor
+  Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
+  The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
+  videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
+  change the looks of a blog.
+
+  Robust content management
+  Flexible content management enables users to easily move through posts. Increase the usability of your blog 
+  by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
+
+  State of the Art Infrastructure
+  With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
+  This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
+
+  Free, open, simple
+  Blogr is a free and open source application backed by a large community of helpful developers. It supports 
+  features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
+  and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
+
+  Powerful tooling
+  Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
+  capable of producing even the most complicated sites.
+
+  Product
+
+  Overview
+  Pricing
+  Marketplace
+  Features
+  Integrations
+
+  Company
+
+  About
+  Team
+  Blog
+  Careers
+
+  Connect
+  
+  Contact
+  Newsletter
+  LinkedIn -->
+  <header class="header">
+    <section class="header__menu-mobile">
+      <img class="logo" src="./images/logo.svg">
+      <div class="menu-desktop">
+        <div class="menu-desktop__left">
+          <img class="logo-desktop" src="./images/logo.svg">
+          <nav>
+            <ul>
+              <li>Product<img id="desplegar-product-desktop" src="./images/icon-arrow-light.svg"></li>
+              <div class="menu-product-desktop visible">
+                <span>Overview</span>
+                <span>Pricing</span>
+                <span>Marketplace</span>
+                <span>Features</span>
+                <span>Integrations</span>
+
+              </div>
+              <li>Company<img id="desplegar-company-desktop" src="./images/icon-arrow-light.svg"></li>
+              <div class="menu-company-desktop visible">
+                <span>About</span>
+                <span>Team</span>
+                <span>Blog</span>
+                <span>Careers</span>
+                
+              </div>
+              <li>Connect<img id="desplegar-connect-desktop" src="./images/icon-arrow-light.svg"></li>
+              <div class="menu-connect-desktop visible">
+                <span>Contact</span>
+                <span>Newsletter</span>
+                <span>LinkedIn</span>
+                
+              </div>
+              
+            </ul>
+          </nav>
+        </div>
+        <div class="menu-desktop__right">
+          <h3>Login</h3>
+          <button>Sign Up</button>
+        </div>
+      </div>
+      
+     <img class="menu-hamburguesa" src="./images/icon-hamburger.svg">
+     
+      <div class="menu-despegable-mobile visible"> <!--La clase visible tiene un visiility:hidden1-->
+        <div class="mobile-Product">
+       <h2>Product<img id="desplegar-product" src="./images/icon-arrow-dark.svg"></h2>
+        <div class="mobile-span">
+          <span class="span-Product disabled">Overview</span> <!--Probar darle clase disabled a estos y jugar con eso en JS-->
+          <span class="span-Product disabled">ricing</span>
+          <span class="span-Product disabled">Marketplace</span>
+          <span class="span-Product disabled">Features</span>
+          <span class="span-Product disabled">Integrations</span>
+        
+        </div>
+       </div>
+       <div class="mobile-Company">
+        <h2>Company<img id="desplegar-Company" src="./images/icon-arrow-dark.svg"></h2>
+         <div class="mobile-span">
+           <span class="span-Company disabled">About</span>
+           <span class="span-Company disabled">Team</span>
+           <span class="span-Company disabled">Blog</span>
+           <span class="span-Company disabled">Careers</span>
+         
+         
+         </div>
+        </div>
+        <div class="mobile-Connect">
+          <h2>Connect<img id="desplegar-Connect" src="./images/icon-arrow-dark.svg"></h2>
+           <div class="mobile-span">
+             <span class="span-Connect disabled">Contact</span>
+             <span class="span-Connect disabled">Newsletter</span>
+             <span class="span-Connect disabled">LinkedIn</span>
+           
+           </div>
+          </div>
+          
+          <div class="logearse">
+            <h3>Login</h3>
+            <button>Sign Up</button>
+
+          </div>
+
+      </div>
+      
+   </section>
+   <section class="header__title">
+    <h3> A modern publishing platform</h3>
+      <p>  Grow your audience and build your online brand</p>
+   </section>
+   <section class="buttons">
+    <button class="Start">Start For Free</button>
+    <button class="Learn">Learn More</button>
+   </section>
+  </header>
+
+  <main class="main">
+    <div class="main__title-cam">
+    <h2>Designed for the future</h2>
+    <img class="illustration-mobile" src="./images/illustration-editor-mobile.svg">
+    </div>
+    <div class="div-container-desktop">
+  
+  
+    <img class="illustration-desktop" src="./images/illustration-editor-desktop.svg">
+   
+ 
+  
+    <section class="main__container__texts">
+    <div class="main__texts">
+      <h2> Introducing an extensible editor</h2>
+      <p>  Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
+        The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
+        videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
+        change the looks of a blog.</p>
+    </div>
+    <div class="main__texts">
+      <h2>   Robust content management</h2>
+      <p class="flexible">Flexible content management enables users to easily move through posts. Increase the usability of your blog 
+        by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.</p>
+    </div>
+
+
+    </section>
+    </div>
+  
+    
+    <section class="main__phones">
+      <img src="./images/illustration-phones.svg"> <!--Poner background image-->
+       <div class="main__phones__texts">
+        <h2> State of the Art Infrastructure</h2>
+        <p> With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
+          This ensures your site will load instantly, no matter where your readers are, keeping your site competitive</p>
+       </div>
+    </section>
+
+    <section class="main__imgDesktop">
+      <img src="./images/illustration-laptop-mobile.svg">
+      <div class="container-probando">
+      <div class="main__imgDesktop__texts">
+        <h3>Free, open, simple</h3>
+        <p> Blogr is a free and open source application backed by a large community of helpful developers. It supports 
+          features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
+          and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.</p>
+
+      </div>
+      <div class="main__imgDesktop__texts">
+        <h3> Powerful tooling</h3>
+        <p>Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
+          capable of producing even the most complicated sites.</p>
+
+      </div>
+      </div>
+    
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <img src="./images/logo.svg">
+    <div class="footer__container__items">
+      <div class="footer__probando">
+      <h2>Product</h2>
+      <div class="footer__container__span">
+      <span>Overview</span> 
+      <span>Pricing</span>
+      <span>Marketplace</span>
+      <span>Features</span>
+      <span>Integrations</span>
+      </div>
+      </div>
+     <div class="footer__probando">
+      <h2>Company</h2>
+      <div class="footer__container__span">
+        <span>About</span> 
+        <span>Team</span>
+        <span>Blog</span>
+        <span>Careers</span>
+        </div>
+        </div>
+      
+        <div class="footer__probando">
+        <h2>Connect</h2>
+        <div class="footer__container__span">
+          <span>Contact</span>  
+       
+          <span>Newsletter</span>
+          <span>LinkedIn</span>
+       
+        </div>
+        </div>
+
+    </div>
+   
+
+  </footer>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Gonzalo Haag</a>.
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
